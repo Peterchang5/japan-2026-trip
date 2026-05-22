@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🦀 日本秋季螃蟹溫泉五日行程 2026</title>
+  <style>
+    :root {
+      --red:    #c0392b;
+      --gold:   #d4a017;
+      --cream:  #fdf6e3;
+      --brown:  #4a2f1a;
+      --indigo: #2c3e6b;
+      --fog:    #f0ebe0;
+      --border: #d9c9a3;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Hiragino Kaku Gothic ProN", "Noto Sans TC", sans-serif;
+      background: var(--cream);
+      color: var(--brown);
+      line-height: 1.7;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      background: linear-gradient(160deg, #1a1a2e 0%, #2c3e6b 50%, #8b1a1a 100%);
+      color: #fff;
+      text-align: center;
+      padding: 80px 24px 60px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: "🍂";
+      font-size: 240px;
+      position: absolute;
+      top: -40px; right: -40px;
+      opacity: 0.08;
+      pointer-events: none;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--brown);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      padding: 4px 16px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      font-size: clamp(28px, 6vw, 52px);
+      font-weight: 900;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+    .hero h1 span { color: var(--gold); }
+    .hero p {
+      font-size: 17px;
+      opacity: 0.85;
+      max-width: 560px;
+      margin: 0 auto 32px;
+    }
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .stat {
+      text-align: center;
+    }
+    .stat-num {
+      font-size: 36px;
+      font-weight: 900;
+      color: var(--gold);
+      display: block;
+    }
+    .stat-label {
+      font-size: 13px;
+      opacity: 0.75;
+    }
+
+    /* ── Highlights Strip ── */
+    .highlights {
+      background: var(--indigo);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      flex-wrap: wrap;
+    }
+    .highlight-item {
+      padding: 14px 28px;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-right: 1px solid rgba(255,255,255,0.15);
+    }
+    .highlight-item:last-child { border-right: none; }
+    .highlight-item span { font-size: 20px; }
+
+    /* ── Container ── */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ── Section Title ── */
+    .section-title {
+      text-align: center;
+      padding: 56px 0 32px;
+    }
+    .section-title h2 {
+      font-size: 26px;
+      font-weight: 900;
+      color: var(--red);
+      margin-bottom: 8px;
+    }
+    .section-title p {
+      color: #7a6a50;
+      font-size: 15px;
+    }
+
+    /* ── Day Cards ── */
+    .day-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      margin-bottom: 28px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .day-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 20px 28px;
+      background: var(--fog);
+      border-bottom: 1px solid var(--border);
+    }
+    .day-num {
+      background: var(--red);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 900;
+      padding: 6px 14px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+    .day-title {
+      font-size: 19px;
+      font-weight: 800;
+      color: var(--brown);
+    }
+    .day-subtitle {
+      font-size: 13px;
+      color: #9a8060;
+      margin-top: 2px;
+    }
+    .day-body { padding: 24px 28px; }
+
+    /* ── Timeline ── */
+    .timeline { position: relative; padding-left: 20px; }
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 7px; top: 8px; bottom: 8px;
+      width: 2px;
+      background: var(--border);
+    }
+    .tl-item {
+      position: relative;
+      margin-bottom: 24px;
+      padding-left: 24px;
+    }
+    .tl-item:last-child { margin-bottom: 0; }
+    .tl-dot {
+      position: absolute;
+      left: -13px;
+      top: 6px;
+      width: 14px; height: 14px;
+      border-radius: 50%;
+      background: var(--gold);
+      border: 2px solid #fff;
+      box-shadow: 0 0 0 2px var(--gold);
+    }
+    .tl-time {
+      font-size: 12px;
+      color: #9a8060;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+    .tl-place {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--brown);
+      margin-bottom: 4px;
+    }
+    .tl-desc {
+      font-size: 14px;
+      color: #6a5a40;
+    }
+    .tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 10px;
+      border-radius: 12px;
+      margin-right: 6px;
+      margin-top: 6px;
+    }
+    .tag-crab  { background: #fde8d8; color: #c0392b; }
+    .tag-onsen { background: #d8eaf8; color: #1a5276; }
+    .tag-sight { background: #d8f0e0; color: #1a6634; }
+    .tag-food  { background: #fdf0d8; color: #9a6a00; }
+
+    /* ── Crab Grid ── */
+    .crab-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 8px;
+    }
+    .crab-card {
+      background: var(--fog);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .crab-card h4 {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--red);
+      margin-bottom: 6px;
+    }
+    .crab-card .crab-jp {
+      font-size: 12px;
+      color: #9a8060;
+      margin-bottom: 10px;
+    }
+    .crab-card p { font-size: 13px; color: #6a5a40; }
+
+    /* ── Onsen Grid ── */
+    .onsen-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+      gap: 12px;
+    }
+    .onsen-item {
+      background: linear-gradient(135deg, #d8eaf8, #eaf2fb);
+      border: 1px solid #b0cce8;
+      border-radius: 10px;
+      padding: 14px 16px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--indigo);
+    }
+    .onsen-item small {
+      display: block;
+      font-weight: 400;
+      font-size: 12px;
+      color: #4a6a8a;
+      margin-top: 4px;
+    }
+
+    /* ── Tips Box ── */
+    .tips-box {
+      background: linear-gradient(135deg, #fff9ee, #fdf0d8);
+      border: 1px solid #e8c878;
+      border-radius: 14px;
+      padding: 28px 32px;
+      margin-bottom: 28px;
+    }
+    .tips-box h3 {
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--brown);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .tips-box ul { padding-left: 20px; }
+    .tips-box li {
+      font-size: 14px;
+      color: #6a5a40;
+      margin-bottom: 8px;
+    }
+    .tips-box li strong { color: var(--brown); }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--brown);
+      color: rgba(255,255,255,0.7);
+      text-align: center;
+      padding: 32px 20px;
+      font-size: 13px;
+      margin-top: 60px;
+    }
+    footer strong { color: var(--gold); }
+
+    @media (max-width: 600px) {
+      .day-header { flex-direction: column; align-items: flex-start; gap: 8px; }
+      .day-body, .day-header { padding: 18px 18px; }
+      .highlight-item { padding: 10px 16px; font-size: 13px; }
+      .hero { padding: 56px 18px 44px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── Hero ── -->
+<header class="hero">
+  <div class="hero-badge">Dajourney · Team Trip 2026 Q4</div>
+  <h1>🦀 秋蟹 × 溫泉<br /><span>日本五日行程</span></h1>
+  <p>城崎溫泉 → 鳥取砂丘 → 天橋立<br />追著松葉蟹開捕季，泡遍七座外湯</p>
+  <div class="hero-stats">
+    <div class="stat"><span class="stat-num">5</span><span class="stat-label">天</span></div>
+    <div class="stat"><span class="stat-num">3</span><span class="stat-label">種螃蟹</span></div>
+    <div class="stat"><span class="stat-num">7</span><span class="stat-label">座外湯</span></div>
+    <div class="stat"><span class="stat-num">11月</span><span class="stat-label">最佳時機</span></div>
+  </div>
+</header>
+
+<!-- ── Highlights ── -->
+<div class="highlights">
+  <div class="highlight-item"><span>🚄</span> 京都出發 2.5 小時</div>
+  <div class="highlight-item"><span>🦀</span> 11/6 松葉蟹開捕季</div>
+  <div class="highlight-item"><span>♨️</span> 城崎七湯全制覇</div>
+  <div class="highlight-item"><span>🍂</span> 楓葉×日本海全景</div>
+</div>
+
+<!-- ── Itinerary ── -->
+<div class="container">
+  <div class="section-title">
+    <h2>五日行程總覽</h2>
+    <p>京都 → 城崎溫泉 → 鳥取 → 天橋立 → 京都</p>
+  </div>
+
+  <!-- Day 1 -->
+  <div class="day-card">
+    <div class="day-header">
+      <div>
+        <div class="day-num">Day 1</div>
+      </div>
+      <div>
+        <div class="day-title">城崎溫泉抵達・松葉蟹全席</div>
+        <div class="day-subtitle">京都 → 城崎（特急こうのとり・約 2h30m）</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-time">09:00</div>
+          <div class="tl-place">京都站出發</div>
+          <div class="tl-desc">搭乘特急こうのとり，沿途可見丹波高原與日本海。</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-time">11:30</div>
+          <div class="tl-place">城崎溫泉駅・チェックイン</div>
+          <div class="tl-desc">入住旅館、換上浴衣領取七湯通行證。推薦：<strong>西村屋本館</strong>（老鋪旅館，松葉蟹全席名店）。
+            <br /><span class="tag tag-onsen">♨️ 溫泉</span><span class="tag tag-crab">🦀 松葉蟹全席</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-time">13:00</div>
+          <div class="tl-place">桶屋鮮魚・海幸苑（昼食）</div>
+          <div class="tl-desc">驛前市場現買現煮，松葉蟹腳剛卸船最鮮，蟹膏超濃。
+            <br /><span class="tag tag-crab">🦀 松葉蟹</span><span class="tag tag-food">🍽️ 市場</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-time">15:00–19:00</div>
+          <div class="tl-place">城崎外湯めぐり（下午場）</div>
+          <div class="tl-desc">推薦先泡：<strong>鴻の湯</strong>（城崎最古の湯）→ <strong>まんだら湯</strong>（藥師如來守護）。穿浴衣在柳川石板路散步。
+            <br /><span class="tag tag-onsen">♨️ 鴻の湯</span><span class="tag tag-onsen">♨️ まんだら湯</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-time">20:30</div>
+          <div class="tl-place">御所の湯（夜湯）</div>
+          <div class="tl-desc">城崎最知名外湯，瀑布式露天風呂，夜晚燈光倒映在柳川水面，極美。
+            <br /><span class="tag tag-onsen">♨️ 御所の湯</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 2 -->
+  <div class="day-card">
+    <div class="day-header">
+      <div>
+        <div class="day-num">Day 2</div>
+      </div>
+      <div>
+        <div class="day-title">城崎深度・香箱蟹 × 剩餘外湯</div>
+        <div class="day-subtitle">城崎溫泉（續住）</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-time">07:00</div>
+          <div class="tl-place">朝の外湯 — さとの湯</div>
+          <div class="tl-desc">城崎唯一的現代風呂，有三溫暖與大型露天岩風呂。清晨幾乎無人，獨享。
+            <br /><span class="tag tag-onsen">♨️ さとの湯</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-time">08:30</div>
+          <div class="tl-place">旅館朝食（松葉蟹粥）</div>
+          <div class="tl-desc">西村屋的蟹粥套餐，以昆布高湯熬製，清甜不膩，是城崎早晨標配。
+            <br /><span class="tag tag-crab">🦀 蟹粥</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-time">10:00</div>
+          <div class="tl-place">玄武洞（玄武岩柱狀節理）</div>
+          <div class="tl-desc">距城崎 5 分鐘船渡，160 萬年前火山熔岩冷卻形成的六角形岩柱群，被指定為國家天然紀念物。
+            <br /><span class="tag tag-sight">🏞️ 觀光</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-time">12:30</div>
+          <div class="tl-place">香箱蟹昼膳</div>
+          <div class="tl-desc"><strong>香箱蟹（こうばこがに）</strong>是雌性松葉蟹，11 月才有、數量稀少。蟹膏＋蟹卵的組合比雄蟹更濃郁，絕對要吃一隻。城崎市場現點現蒸。
+            <br /><span class="tag tag-crab">🦀 香箱蟹</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-time">14:00–18:00</div>
+          <div class="tl-place">完成剩餘三座外湯</div>
+          <div class="tl-desc"><strong>一の湯</strong>（歌舞伎隈取拱門，城崎代表臉）→ <strong>柳湯</strong>（柳樹下的隱密小湯）→ <strong>地蔵湯</strong>（漁夫守護神，六角窗）。七湯全制覇！
+            <br /><span class="tag tag-onsen">♨️ 一の湯</span><span class="tag tag-onsen">♨️ 柳湯</span><span class="tag tag-onsen">♨️ 地蔵湯</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-time">19:00</div>
+          <div class="tl-place">旅館晩餐・松葉蟹懐石</div>
+          <div class="tl-desc">蟹刺身、蟹蒸し、蟹焼き、蟹すき鍋、蟹雑炊 — 一隻蟹吃盡五種料理法。
+            <br /><span class="tag tag-crab">🦀 松葉蟹懐石</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 3 -->
+  <div class="day-card">
+    <div class="day-header">
+      <div>
+        <div class="day-num">Day 3</div>
+      </div>
+      <div>
+        <div class="day-title">鳥取砂丘 × 松葉蟹産地直送</div>
+        <div class="day-subtitle">城崎 → 鳥取（バス約 1h40m）</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-time">09:00</div>
+          <div class="tl-place">城崎出發 → 鳥取</div>
+          <div class="tl-desc">沿日本海海岸線行駛，途中可見山陰海岸地質公園的崖壁奇景。</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-time">10:45</div>
+          <div class="tl-place">鳥取砂丘</div>
+          <div class="tl-desc">日本唯一的大型砂丘，南北 2.4km，高低落差 90m。秋天光線低角度，砂丘紋理最漂亮。可選擇騎駱駝或滑沙。
+            <br /><span class="tag tag-sight">🏜️ 觀光</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-time">12:30</div>
+          <div class="tl-place">鳥取港・かに吉（昼食）</div>
+          <div class="tl-desc">鳥取漁港直送的松葉蟹，「鳥取松葉ガニ」與城崎同品種但在地漁師價，性價比更高。推薦蟹刺身丼。
+            <br /><span class="tag tag-crab">🦀 鳥取松葉蟹</span><span class="tag tag-food">🎣 漁港直送</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-time">14:00</div>
+          <div class="tl-place">砂の美術館</div>
+          <div class="tl-desc">全球最大的室內砂雕美術館，每年主題更換，精細程度令人難以置信。
+            <br /><span class="tag tag-sight">🎨 美術館</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-time">15:30</div>
+          <div class="tl-place">移動 → 天橋立</div>
+          <div class="tl-desc">搭バス或特急列車前往天橋立，約 1h30m。入住丹後半島溫泉旅館。
+            <br /><span class="tag tag-onsen">♨️ 丹後温泉</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-time">19:00</div>
+          <div class="tl-place">旅館晩餐・丹後ズワイガニ</div>
+          <div class="tl-desc">天橋立產的「丹後ズワイガニ」有專屬認證標籤，漁夫料理風格，蟹鍋湯頭特別鮮甜。
+            <br /><span class="tag tag-crab">🦀 丹後ズワイガニ</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 4 -->
+  <div class="day-card">
+    <div class="day-header">
+      <div>
+        <div class="day-num">Day 4</div>
+      </div>
+      <div>
+        <div class="day-title">天橋立 × 伊根舟屋・日本三景</div>
+        <div class="day-subtitle">天橋立（全日遊覽）</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-time">08:00</div>
+          <div class="tl-place">天橋立股覗 — 股のぞき</div>
+          <div class="tl-desc">從笠松公園搭纜車登頂，彎腰從胯下反看天橋立，白沙松林化為「天に架かる橋」，日本三景之一，早晨薄霧最有詩意。
+            <br /><span class="tag tag-sight">🏞️ 日本三景</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-time">10:00</div>
+          <div class="tl-place">天橋立自行車遊</div>
+          <div class="tl-desc">在長達 3.6km 的沙洲上騎自行車，兩側是松樹林與碧藍海灣，秋天藍天透亮，視野絕佳。
+            <br /><span class="tag tag-sight">🚲 單車</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-time">12:30</div>
+          <div class="tl-place">智恩寺參拜 + 周邊海鮮市場</div>
+          <div class="tl-desc">「智恵の輪」許智慧願望，市場有各種海鮮燒烤小吃：牡蠣、蟹腳串。
+            <br /><span class="tag tag-sight">⛩️ 寺院</span><span class="tag tag-food">🦪 海鮮</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-time">14:00</div>
+          <div class="tl-place">伊根の舟屋（世界遺産候補）</div>
+          <div class="tl-desc">日本唯一「海上茶屋群」，一樓停船二樓住人，約 230 棟連排舟屋。搭觀光船繞行看最震撼。秋天水面鏡面反射，美得不真實。
+            <br /><span class="tag tag-sight">🚢 舟屋</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-time">17:00</div>
+          <div class="tl-place">返回旅館・溫泉泡湯</div>
+          <div class="tl-desc">丹後溫泉多為鹼性單純泉，美肌效果好，日本海景觀露天風呂特別推薦。
+            <br /><span class="tag tag-onsen">♨️ 日本海展望風呂</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-time">19:00</div>
+          <div class="tl-place">最後晩餐・蟹壽司 + 蟹味噌</div>
+          <div class="tl-desc">丹後特有的「蟹棒壽司」（バッテラ風格押し寿司），蟹味噌以貝殼盛裝直接燒烤，香氣逼人。行程最後一頓蟹！
+            <br /><span class="tag tag-crab">🦀 蟹壽司</span><span class="tag tag-crab">🦀 蟹味噌燒</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 5 -->
+  <div class="day-card">
+    <div class="day-header">
+      <div>
+        <div class="day-num">Day 5</div>
+      </div>
+      <div>
+        <div class="day-title">返回京都・伴手禮採買</div>
+        <div class="day-subtitle">天橋立 → 京都（特急はしだて 約 2h）</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-time">08:00</div>
+          <div class="tl-place">旅館朝食 + 退房</div>
+          <div class="tl-desc">最後一次日式懐石早餐，蟹粥或蟹茶漬け，吃飽再戰。</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-time">10:00</div>
+          <div class="tl-place">天橋立駅周邊伴手禮</div>
+          <div class="tl-desc">必買：<strong>蟹味噌醬（瓶裝）</strong>、<strong>丹後松葉蟹仙貝</strong>、<strong>天橋立黑豆酒</strong>。新鮮活蟹也可宅配回台。
+            <br /><span class="tag tag-food">🛍️ 伴手禮</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-time">11:30</div>
+          <div class="tl-place">搭特急はしだて → 京都</div>
+          <div class="tl-desc">沿丹後鐵道穿越丹波高原，秋天滿山楓葉，車窗即是風景。</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-time">13:30</div>
+          <div class="tl-place">京都抵達・行程結束</div>
+          <div class="tl-desc">若有時間，京都錦市場再吃一輪各種醃漬海鮮小食收尾。
+            <br /><span class="tag tag-sight">🏯 京都</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Crab Guide ── -->
+  <div class="section-title">
+    <h2>🦀 螃蟹種類完全攻略</h2>
+    <p>這趟你會吃到三種不同的蟹，各有特色</p>
+  </div>
+
+  <div class="crab-grid" style="margin-bottom: 48px;">
+    <div class="crab-card">
+      <h4>松葉蟹（雄）</h4>
+      <div class="crab-jp">松葉ガニ / ズワイガニ</div>
+      <p>腳超長、肉質甜嫩，頂級品有「タグ付き」認證標籤。城崎、鳥取、天橋立皆有，11月開季後最鮮。懐石一隻 ¥15,000–30,000。</p>
+    </div>
+    <div class="crab-card">
+      <h4>香箱蟹（雌）</h4>
+      <div class="crab-jp">こうばこがに / セコガニ</div>
+      <p>雌性松葉蟹，體型小一半但蟹卵+蟹膏的量驚人。11月才有、12月底禁捕，稀少性讓饕客趨之若鶩。一隻約 ¥2,000–4,000，性價比極高。</p>
+    </div>
+    <div class="crab-card">
+      <h4>丹後ズワイガニ</h4>
+      <div class="crab-jp">丹後産ブランド蟹</div>
+      <p>天橋立（丹後半島）漁港直送，有京都府認證標籤。與松葉蟹同品種，漁村質樸料理法讓蟹的原味更突出，常以蟹鍋、蒸蟹呈現。</p>
+    </div>
+  </div>
+
+  <!-- ── Onsen Guide ── -->
+  <div class="section-title">
+    <h2>♨️ 城崎七湯全制覇</h2>
+    <p>入住旅館即可領取通行證，七座全免費</p>
+  </div>
+
+  <div class="onsen-grid" style="margin-bottom: 48px;">
+    <div class="onsen-item">御所の湯<small>瀑布露天・城崎最人氣</small></div>
+    <div class="onsen-item">一の湯<small>歌舞伎拱門・城崎の顔</small></div>
+    <div class="onsen-item">鴻の湯<small>城崎最古の湯・弁財天</small></div>
+    <div class="onsen-item">まんだら湯<small>藥師如來・眼疾腳傷</small></div>
+    <div class="onsen-item">さとの湯<small>現代風呂・三溫暖</small></div>
+    <div class="onsen-item">柳湯<small>柳樹下の隠れ湯</small></div>
+    <div class="onsen-item">地蔵湯<small>漁夫守護・六角窗</small></div>
+  </div>
+
+  <!-- ── Tips ── -->
+  <div class="tips-box">
+    <h3>📌 實用資訊 &amp; 注意事項</h3>
+    <ul>
+      <li><strong>最佳時機：</strong>11 月初至 12 月中。松葉蟹 11/6 前後開捕，香箱蟹 12 月底前禁捕，楓葉最盛期約 11 月中。</li>
+      <li><strong>旅館預訂：</strong>城崎溫泉旅館含蟹套餐極搶手，建議開季前 2–3 個月訂房，西村屋本館、但馬屋、千年の湯 古まん 皆為口碑選擇。</li>
+      <li><strong>松葉蟹認證標籤：</strong>正規松葉蟹腳上有「タグ（tag）」，不同漁港顏色不同（城崎=黃、鳥取=青等），購買前確認有標籤。</li>
+      <li><strong>外湯禮儀：</strong>必須先在旅館內湯沖洗乾淨再進外湯；刺青原則上不可入湯（部分新設施有例外，出發前確認）。</li>
+      <li><strong>交通：</strong>城崎溫泉站→鳥取可搭全但バス（約 ¥1,700），天橋立→京都搭特急はしだて（約 ¥3,700），IC 卡無法乘特急，需買票。</li>
+      <li><strong>預算參考：</strong>城崎含蟹旅館 ¥30,000–60,000/晚・鳥取午餐蟹丼 ¥3,000–5,000・天橋立旅館 ¥25,000–45,000/晚。</li>
+    </ul>
+  </div>
+
+</div><!-- /container -->
+
+<!-- ── Footer ── -->
+<footer>
+  <p>🦀 <strong>Dajourney · 日本秋季螃蟹溫泉五日行程 2026 Q4</strong></p>
+  <p style="margin-top:8px; font-size:12px;">城崎溫泉 × 鳥取砂丘 × 天橋立 ・ 2026 年秋季</p>
+</footer>
+
+</body>
+</html>

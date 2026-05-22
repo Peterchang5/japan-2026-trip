@@ -272,6 +272,22 @@
     .feature-dark .section-header h2 { color: #fff; }
     .feature-dark .section-header p { color: rgba(255,255,255,0.55); }
 
+    .phantom-quote {
+      max-width: 680px; margin: 0 auto 56px;
+      font-size: clamp(20px, 3vw, 28px); font-weight: 300;
+      font-style: italic; line-height: 1.7; text-align: center;
+      color: var(--gold-lt); letter-spacing: 0.04em;
+      border: none; padding: 0;
+      position: relative;
+    }
+    .phantom-quote::before {
+      content: '\300C'; font-size: 1.4em; opacity: 0.4;
+      position: absolute; left: -0.5em; top: -0.1em;
+    }
+    .phantom-quote::after {
+      content: '\300D'; font-size: 1.4em; opacity: 0.4;
+      position: absolute; right: -0.5em; bottom: -0.1em;
+    }
     .reasons { max-width: 740px; margin: 0 auto 44px; }
     .reason {
       display: flex;
@@ -765,6 +781,7 @@
       <h2>為什麼被稱為「幻之蟹」</h2>
       <p>有些稀缺，無法複製，無從預約——只能在對的季節，親自前往那座小港追尋。</p>
     </div>
+    <blockquote class="phantom-quote">追尋那如夢般的幻の蟹，<br/>順手收下整個冬日的京都與山陰。</blockquote>
     <div class="reasons">
       <div class="reason">
         <div class="reason-num">01</div>

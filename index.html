@@ -272,22 +272,18 @@
     .feature-dark .section-header h2 { color: #fff; }
     .feature-dark .section-header p { color: rgba(255,255,255,0.55); }
 
-    .phantom-facts {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 16px;
-      margin-bottom: 40px;
+    .reasons { max-width: 740px; margin: 0 auto 44px; }
+    .reason {
+      display: flex;
+      gap: 26px;
+      padding: 28px 4px;
+      border-top: 1px solid rgba(255,255,255,0.1);
     }
-    .phantom-fact {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 12px;
-      padding: 24px 18px;
-      text-align: center;
-    }
-    .pf-icon { font-size: 26px; margin-bottom: 10px; }
-    .pf-num { font-size: 34px; font-weight: 900; color: var(--gold-lt); line-height: 1; margin-bottom: 8px; }
-    .pf-label { font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.5; }
+    .reason:last-child { border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .reason-num { font-size: 36px; font-weight: 900; color: var(--gold-lt); opacity: 0.5; line-height: 1.1; flex-shrink: 0; }
+    .reason-title { font-size: 18px; font-weight: 800; color: #fff; margin-bottom: 8px; }
+    .reason-text { font-size: 14px; color: rgba(255,255,255,0.62); line-height: 1.85; }
+    .reason-text strong { color: var(--gold-lt); font-weight: 700; }
 
     .green-tag-box {
       background: rgba(45,106,79,0.15);
@@ -399,6 +395,8 @@
       .day-body { padding: 18px; }
       .day-badge { margin-left: 0; }
       .feature-dark { padding: 56px 0; }
+      .reason { gap: 16px; padding: 22px 0; }
+      .reason-num { font-size: 28px; }
       .green-tag-box { padding: 22px 18px; }
       .promise-box { padding: 22px 18px; }
       .tips-box { padding: 22px 18px; }
@@ -415,7 +413,7 @@
     <span class="en">TAIZA PHANTOM CRAB — 7 DAYS</span>
     間人 · <span class="accent">幻蟹七日</span>
   </h1>
-  <p class="hero-tagline">追尋最稀缺的幻之蟹，<br/>順手收下整個冬日的京都與山陰。</p>
+  <p class="hero-tagline">追尋那如夢般的幻の蟹，<br/>順手收下整個冬日的京都與山陰。</p>
   <div class="hero-stats">
     <div class="stat"><span class="stat-num">7</span><span class="stat-label">天 6 夜</span></div>
     <div class="hero-divider"></div>
@@ -764,29 +762,30 @@
   <div class="container">
     <div class="section-header">
       <div class="eyebrow">幻の蟹 · The Phantom Crab</div>
-      <h2>為什麼叫「幻蟹」</h2>
-      <p>有些稀缺，無法複製，無從預約，只能親自去追。</p>
+      <h2>為什麼被稱為「幻之蟹」</h2>
+      <p>有些稀缺，無法複製，無從預約——只能在對的季節，親自前往那座小港追尋。</p>
     </div>
-    <div class="phantom-facts">
-      <div class="phantom-fact">
-        <div class="pf-icon">🚢</div>
-        <div class="pf-num">5</div>
-        <div class="pf-label">間人港<br/>出海捕蟹的船隻數</div>
+    <div class="reasons">
+      <div class="reason">
+        <div class="reason-num">01</div>
+        <div>
+          <div class="reason-title">離海最近的鮮度</div>
+          <p class="reason-text">午夜出航、白天捕撈、傍晚回港拍賣——間人的船從不在海上過夜。從丹後沖漁場到港口僅 <strong>2–3 小時</strong>，螃蟹幾乎不耗體力。當別處的蟹在水槽裡熬過數日、肉質漸鬆，間人蟹仍保留著離水那一刻的飽滿與鮮甜。</p>
+        </div>
       </div>
-      <div class="phantom-fact">
-        <div class="pf-icon">🌅</div>
-        <div class="pf-num">日帰</div>
-        <div class="pf-label">當日往返作業<br/>鮮度無可取代</div>
+      <div class="reason">
+        <div class="reason-num">02</div>
+        <div>
+          <div class="reason-title">大海親手決定的限量</div>
+          <p class="reason-text">全港只有 <strong>5 艘</strong>小型捕蟹船。冬日的日本海一旦颳起狂風暴雪，便無人能出航。能出海的日子稀少、船隻稀少——有時整個港口，一整天只等到幾百隻。</p>
+        </div>
       </div>
-      <div class="phantom-fact">
-        <div class="pf-icon">🏷️</div>
-        <div class="pf-num">緑</div>
-        <div class="pf-label">每隻合格蟹<br/>綁上綠色産地吊牌</div>
-      </div>
-      <div class="phantom-fact">
-        <div class="pf-icon">🌊</div>
-        <div class="pf-num">幻</div>
-        <div class="pf-label">冬季海象嚴峻<br/>船出不去就真的沒有</div>
+      <div class="reason">
+        <div class="reason-num">03</div>
+        <div>
+          <div class="reason-title">五十道關卡，只為一枚綠標</div>
+          <p class="reason-text">上岸那一刻，職人逐隻檢視。大小、重量、蟹膏的飽滿、蟹腳的完整、外殼的硬度——<strong>超過 50 個級別</strong>的嚴選，唯有毫無瑕疵的極品，才配得上那枚象徵間人的綠色吊牌。</p>
+        </div>
       </div>
     </div>
     <div class="green-tag-box">
